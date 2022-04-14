@@ -44,5 +44,6 @@
 	   gt_bor();
 	   gt_otziv();
 	   gt_youtuber();
+	   gt_proba();
   }
 

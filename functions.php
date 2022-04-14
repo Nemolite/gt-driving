@@ -39,5 +39,6 @@ include 'gt-inc/sertificat.php';
 include 'gt-inc/bor.php';
 include 'gt-inc/otziv.php';
 include 'gt-inc/youtuber.php';
+include 'gt-inc/proba.php';
 
 
