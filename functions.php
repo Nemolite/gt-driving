@@ -28,8 +28,6 @@ function gt_include_scripts_and_style() {
 	wp_enqueue_style( 'slickcss', get_stylesheet_directory_uri() . '/slick/slick.css' );
 }
 
-
-
 /**
  * Подключение блоков
  */
@@ -40,5 +38,4 @@ include 'gt-inc/bor.php';
 include 'gt-inc/otziv.php';
 include 'gt-inc/youtuber.php';
 include 'gt-inc/proba.php';
-
-
+include 'gt-inc/autos.php';

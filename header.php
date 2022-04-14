@@ -45,5 +45,6 @@
 	   gt_otziv();
 	   gt_youtuber();
 	   gt_proba();
+	   gt_autos();
   }
 
