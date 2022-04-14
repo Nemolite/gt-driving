@@ -1,3 +1,11 @@
-  let basas = document.querySelector('.our_auto-inner-basa')
-  console.log(basas)
+$(document).ready(function(){
+  $('.otziv-slider-class').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    //autoplaySpeed: 2000,
+    prevArrow: $('.slider-arows-left'),
+    nextArrow: $('.slider-arows-right'),
+  });
+});
 

@@ -17,6 +17,9 @@ Version: 1.0.0
 	border: 1px solid red;
 }
 
+.green {
+	border: 1px solid green;
+}
 .white {
 	border: 1px solid white;
 }
@@ -313,8 +316,8 @@ Version: 1.0.0
 }
 
 .sertificat-inner-item-img {
-	width: 80px;
-	height: 100px;
+	width: 44px;
+	height: 64px;
 	margin-bottom: 20px;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -342,4 +345,167 @@ Version: 1.0.0
 	font-weight: 700;	
 	color:white;
 	text-align: center;
+}
+
+.bor {
+	width: 100%;
+	height: 650px;
+
+}
+
+.bor-txt {
+	padding-top: 130px;
+	padding-left: 95px;
+}
+.bor-txt-top {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 16px;
+	font-weight: 400;	
+	color:#222222;	
+	text-transform: uppercase;
+}
+
+.bor-title {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 36px;
+	font-weight: 700;	
+	color:#222222;	
+	width: 80%;
+	line-height: 43px;
+	margin-top: 0px;
+
+}
+
+.bor-txt-line1 {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 16px;
+	font-weight: 400;	
+	color:#222222;	
+	width: 70%;
+}
+
+.bor-txt-line2 {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 16px;
+	font-weight: 400;	
+	color:#222222;	
+	width: 70%;
+	margin-bottom: 30px;
+}
+
+.bor-btn {
+	width: 172px;
+	height: 54px;
+	background-color: #C53537;
+	text-decoration: none;
+  	display: inline-block;
+	padding: 15px 30px 15px 30px;  
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;	
+
+}
+
+.bor-btn:hover {
+	width: 172px;
+	height: 54px;
+	background-color: #C53537;
+	color: #222222;
+	
+}
+
+.otziv {
+	width: 100%;
+	height: 570px;	
+	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/otziv-scaled.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	padding-top: 130px;	
+}
+
+.otziv-inner{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.otziv-icon {
+	position: relative;
+}
+
+.otziv-icon-title {
+	position: absolute;
+	top:0;
+	left: 31px;
+}
+
+.otziv-icon-title h2 {
+	text-align: left;
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color:white;
+	margin-bottom: 50px;
+}
+
+.otziv-icon-title span {	
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:white;
+}
+
+.otziv-slider {
+	width: 100%;
+	height: 300px;
+}
+
+.otziv-slider-class {
+	width: 100%;
+	height: 250px;
+}
+.otziv-slider-class-item {
+	width: 100%;
+	height: 100%;
+
+}
+
+.otziv-slider-class-item-person-text {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #989898;
+	margin-bottom: 50px;
+}
+
+.otziv-slider-class-item-person {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.slider-arows {
+	width: 100px;
+	height: 40px;
+	float: right;
+}
+
+.slider-arows-left,
+.slider-arows-right {
+	display: inline-block;
+}
+
+.slider-arows-right {
+	float: right;
 }

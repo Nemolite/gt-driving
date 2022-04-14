@@ -16,13 +16,18 @@ function gt_bikes2ride_content_class( $classes = array() ) {
 }
 
 /**
- * Подключение скриптов
+ * Подключение скриптов и стилей
  */
-add_action( 'wp_enqueue_scripts', 'true_include_myscript', 25 );
+add_action( 'wp_enqueue_scripts', 'gt_include_scripts_and_style', 25 );
  
-function true_include_myscript() {
-	wp_enqueue_script( 'myscript', get_stylesheet_directory_uri() . '/scripts/script.js', array(), '1.0.0',true );
+function gt_include_scripts_and_style() {
+	wp_enqueue_script( 'myjquery', get_stylesheet_directory_uri() . '/scripts/jquery360.js', array(), '3.6.0',true );
+	wp_enqueue_script( 'slickjs', get_stylesheet_directory_uri() . '/slick/slick.min.js', array(), '1.18.1',true );
+	wp_enqueue_script( 'myscript', get_stylesheet_directory_uri() . '/scripts/script.js', array('myjquery'), '1.0.0',true );
+
+	wp_enqueue_style( 'slickcss', get_stylesheet_directory_uri() . '/slick/slick.css' );
 }
+
 
 
 /**
@@ -31,3 +36,6 @@ function true_include_myscript() {
 include 'gt-inc/program_study.php';
 include 'gt-inc/our_auto.php';
 include 'gt-inc/sertificat.php';
+include 'gt-inc/bor.php';
+include 'gt-inc/otziv.php';
+
