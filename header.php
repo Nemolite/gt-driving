@@ -40,5 +40,6 @@
 	if( is_front_page() ) {
 	   gt_driving_program_study(); 
        gt_driving_our_auto();
+	   gt_podar_sertificat();
   }
 

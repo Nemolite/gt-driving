@@ -16,7 +16,18 @@ function gt_bikes2ride_content_class( $classes = array() ) {
 }
 
 /**
+ * Подключение скриптов
+ */
+add_action( 'wp_enqueue_scripts', 'true_include_myscript', 25 );
+ 
+function true_include_myscript() {
+	wp_enqueue_script( 'myscript', get_stylesheet_directory_uri() . '/scripts/script.js', array(), '1.0.0',true );
+}
+
+
+/**
  * Подключение блоков
  */
 include 'gt-inc/program_study.php';
 include 'gt-inc/our_auto.php';
+include 'gt-inc/sertificat.php';

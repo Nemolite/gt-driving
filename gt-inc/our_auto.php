@@ -13,12 +13,20 @@ function gt_driving_our_auto(){
 	 	
   			<div class="row">
     			<div class="col-lg-6 col-md-12 col-sm-12">
-
-
+					<!--
+				<figure class="our_auto-inner-basa">
+					<div class="our_auto-img">					
+							<img src="http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/a1.jpg" alt="">					
+							<figcaption class="our_auto-inner-title">BMW 1 Series</figcaption>
+					</div>
+				</figure>	
+-->
 				<figure class="our_auto-inner">
 					<div class="our_auto-img">					
 							<img src="http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/a1.jpg" alt="">					
+							
 					</div>
+
 					<div class="our_auto-inner-txt">
 						<h2>
 						Хетчбэк BMW 1 Series в модификации 118i 
@@ -36,17 +44,17 @@ function gt_driving_our_auto(){
 						от 9 900 до 150 000 руб.
 						</p>
 					</div>
+					
 				</figure>
 
 					
     			</div>
 				<div class="col-lg-6 col-md-12 col-sm-12">
-				<figure class="">
+				<figure class="our_auto-inner-basa">
 					<div class="our_auto-img">
 						<img src="http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/a2.jpg" alt="">
 						<figcaption class="our_auto-inner-title">BMW M2</figcaption>
-					</div>
-						
+					</div>						
 				</figure>	
     			</div>
 				<div class="col-lg-6 col-md-12 col-sm-12">
