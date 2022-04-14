@@ -43,5 +43,6 @@
 	   gt_podar_sertificat();
 	   gt_bor();
 	   gt_otziv();
+	   gt_youtuber();
   }
 
