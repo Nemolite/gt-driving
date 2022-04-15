@@ -32,7 +32,7 @@ function gt_driving_program_study(){
 					<div class="row">
 					<div class="col-md-4 col-sm-6">
 						<div class="program_study-vertical_line"></div>
-						<a href="#">
+						<a href="<?php echo get_home_url(); ?>/nachinayushhim-voditelyam/">
 							<div class="program_study-curses">
 								<div class="program_study-curses-icon">
 								<svg width="64" height="36" viewBox="0 0 64 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ function gt_driving_program_study(){
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="program_study-vertical_line"></div>
-						<a href="#">
+						<a href="<?php echo get_home_url(); ?>/kontravarijnoe-vozhdenie/">
 							<div class="program_study-curses">
 								<div class="program_study-curses-icon">
 								<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@ function gt_driving_program_study(){
 						<div class="program_study-gorizont_line"></div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<a href="#">
+						<a href="<?php echo get_home_url(); ?>/drift-drift/">
 							<div class="program_study-curses">
 								<div class="program_study-curses-icon">
 								<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@ function gt_driving_program_study(){
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="program_study-vertical_line"></div>
-						<a href="#">
+						<a href="<?php echo get_home_url(); ?>/korporativnym-klientam/">
 							<div class="program_study-curses">
 								<div class="program_study-curses-icon">
 								<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +93,7 @@ function gt_driving_program_study(){
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="program_study-vertical_line"></div>
-						<a href="#">
+						<a href="<?php echo get_home_url(); ?>/individualnaya-podgotovka/">
 							<div class="program_study-curses">
 								<div class="program_study-curses-icon">
 								<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +107,7 @@ function gt_driving_program_study(){
 						</a>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<a href="#">
+						<a href="<?php echo get_home_url(); ?>/zaezd-na-sportkare/">
 							<div class="program_study-curses">
 								<div class="program_study-curses-icon">
 								<svg width="68" height="28" viewBox="0 0 68 28" fill="none" xmlns="http://www.w3.org/2000/svg">

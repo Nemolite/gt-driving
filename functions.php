@@ -39,3 +39,8 @@ include 'gt-inc/otziv.php';
 include 'gt-inc/youtuber.php';
 include 'gt-inc/proba.php';
 include 'gt-inc/autos.php';
+
+// Убираем распродажу товаров
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10, 3 );
+// Убрать сортировку товаров
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );

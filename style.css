@@ -615,10 +615,16 @@ Version: 1.0.0
 .autos-item {
 	width: 270px;
 	height: 203px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
+.woocommerce-result-count {
+	display: none;
+}
 
+.title-margin-bottom {
+	margin-bottom: 20px;
+}
 
 
 
