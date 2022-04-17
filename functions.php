@@ -99,3 +99,44 @@ function gt_contact_block( $target = 'header' ) {
 
 	echo $html;
 }
+
+/**
+ * Блог
+ */
+
+add_action('init', 'gt_blog');
+function gt_blog(){
+	$labels = array(
+		'name'               => 'Блог', 
+		'singular_name'      => 'Зпись в блог', 
+		'add_new'            => 'Добавить запись',
+		'add_new_item'       => 'Добавить запись в блог',
+		'edit_item'          => 'Редактировать запись в блоге',
+		'new_item'           => 'Новая запись в блог',
+		'view_item'          => 'Посмотреть запись блога',
+		'search_items'       => 'Найти запись блога',
+		'not_found'          => 'Записи блога не найдено',
+		'not_found_in_trash' => 'В корзине записи блога не найдено',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Блог'
+	  );
+	 
+	  $args = array(
+		'labels' => $labels,
+		'public' => true, // 
+		'show_ui' => true, 
+		'has_archive' => true, 
+		'menu_icon' => 'dashicons-media-document', 
+		'menu_position' => 7, 
+		'supports' => array( 'title', 'editor', 'thumbnail')
+	);	
+	register_post_type('gt_blog', $args  );
+}
+
+/**
+ * Подключение option-tree
+ */
+
+require 'option-tree/ot-loader.php';
+require 'gt-inc/option_tree/meta-boxes.php';
+require 'gt-inc/option_tree/theme-options.php';

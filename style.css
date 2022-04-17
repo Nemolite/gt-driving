@@ -773,7 +773,7 @@ Version: 1.0.0
 	
 }
 
-@media (min-width: 321px) { 
+@media (min-width: 321px) and (max-width: 575px) { 
 	.program_study-gorizont_line {
 		display: none;
 	}
@@ -938,7 +938,7 @@ Version: 1.0.0
 	
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
 	.program_study-gorizont_line {
 		display: none;
 	}
@@ -966,22 +966,66 @@ Version: 1.0.0
  }
 
 // Устройства Medium (планшеты, 768 пикселей и выше)
-@media (min-width: 768px) { 
 
+@media (min-width: 768px) and (max-width: 991px) { 
+	.bor-txt {
+		padding-top: 130px;
+		padding-left: 95px;
+	}
  }
 	 
 // Устройства Large (настольные компьютеры, 992 пикселей и выше)
-@media (min-width: 992px) {
 
+@media (min-width: 992px) and (max-width: 1199px) {
+	.bor-txt {
+		padding-top: 130px;
+		padding-left: 95px;
+	}
+
+	.sertificat-inner-item-toptxt {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: white;
+		line-height: 100%;
+		text-align: center;
+	}
   }
 	 
 // Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
-@media (min-width: 1200px) { 
 
+@media (min-width: 1200px) and (max-width: 1399px) { 
+	.bor-txt {
+		padding-top: 130px;
+		padding-left: 95px;
+	}
+
+	.sertificat-inner-item-toptxt {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: white;
+		line-height: 100%;
+		text-align: center;
+	}
  }
 	 
 // Устройства XX-Large (большие настольные компьютеры, 1400 пикселей и выше)
 @media (min-width: 1400px) { 
-
+	.bor-txt {
+		padding-top: 130px;
+		padding-left: 95px;
+	}
+	.sertificat-inner-item-toptxt {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: white;
+		line-height: 100%;
+		text-align: center;
+	}
  }	 
 

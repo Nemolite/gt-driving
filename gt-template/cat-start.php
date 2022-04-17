@@ -10,5 +10,6 @@ Template Name: Начинающим водителям
         <div class="title-margin-bottom">            
         </div>		
 </div>
+<?php echo the_field('doptxt');?>
 <?php echo do_shortcode('[products category="start" columns="3" paginate="true"]'); ?>
 <?php echo the_content(); ?>
