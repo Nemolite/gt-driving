@@ -421,7 +421,8 @@ Version: 1.0.0
 
 .otziv {
 	width: 100%;
-	height: 570px;	
+	min-height: 570px;	
+	height: auto;
 	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/otziv-scaled.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -432,6 +433,7 @@ Version: 1.0.0
 .otziv-inner{
 	width: 70%;
 	margin: 0 auto;
+	height: auto;
 }
 
 .otziv-icon {
@@ -464,7 +466,8 @@ Version: 1.0.0
 
 .otziv-slider {
 	width: 100%;
-	height: 300px;
+	min-height: 300px;
+	height: auto;
 }
 
 .otziv-slider-class {
@@ -520,7 +523,8 @@ Version: 1.0.0
 
 .proba {
 	width: 100%;
-	height: 1100px;
+	min-height: 1100px;
+	height: auto;
 	padding-top: 150px;
 }
 
@@ -575,9 +579,8 @@ Version: 1.0.0
 
 .proba-left-top-txt {
 	width: 100%;
-	height: 270px;
-	
-
+	min-height: 270px;
+	height: auto;
 }
 
 .proba-left-top-txt-line {
@@ -610,7 +613,8 @@ Version: 1.0.0
 
 .autos {
 	width: 100%;
-	height: 550px;
+	min-height: 550px;
+	height: auto;
 	padding-top: 100px;
 
 }
@@ -661,6 +665,7 @@ Version: 1.0.0
 		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
 		font-size: 25px;
 		font-weight: 300;
+		line-height: 31px;
 	}
 
 	.our_auto span {
@@ -677,6 +682,7 @@ Version: 1.0.0
 		text-transform: uppercase;
 		color: white;
 		margin-bottom: 50px;
+		line-height: 31px;
 	}
 	.sertificat span {
 		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
@@ -692,7 +698,7 @@ Version: 1.0.0
 		font-weight: 700;
 		text-transform: uppercase;
 		color: white;
-		line-height: 100%;
+		line-height: 20px;
 		text-align: center;
 	}
 
@@ -713,8 +719,56 @@ Version: 1.0.0
 		font-weight: 700;
 		color: #222222;
 		width: 80%;
-		line-height: 43px;
+		line-height: 30px;
 		margin-top: 0px;
+	}
+
+	.slider-arows {
+		width: 100px;
+		height: 40px;
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	.bor-txt {
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+
+	.proba h2 {
+		text-align: center;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		line-height: 30px;
+		font-style: normal;
+		color: #222222;
+		display: grid;
+		margin-top: 0px;
+	}
+
+	.proba span {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #222222;
+		line-height: 30px;
+		font-style: normal;
+	}
+
+	.proba-line-txt {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 22px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #222222;
+		margin-bottom: 50px;
 	}
 	
 }
@@ -740,6 +794,146 @@ Version: 1.0.0
 		line-height: 28px;
 		margin-top: 0px;
 	}
+
+	.slider-arows {
+		width: 100px;
+		height: 40px;
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	.bor-txt {
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+
+	.program_study-gorizont_line {
+		display: none;
+	}
+	
+	.program_study-vertical_line {
+		display: none;
+	}
+
+	.program_study-info h2 {
+		color: white;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 32px;
+		text-transform: uppercase;
+	}
+	.our_auto h2 {
+		text-align: center;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 300;
+		line-height: 31px;
+	}
+
+	.our_auto span {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+	}
+
+	.sertificat h2 {
+		text-align: center;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: white;
+		margin-bottom: 50px;
+		line-height: 31px;
+	}
+	.sertificat span {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.sertificat-inner-item-toptxt {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: white;
+		line-height: 20px;
+		text-align: center;
+	}
+
+	.sertificat {
+		width: 100%;
+		/* height: 570px; */
+		background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/podar-scaled.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		padding-top: 100px;
+		min-height: 570px;
+	}
+
+	.bor-title {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		color: #222222;
+		width: 80%;
+		line-height: 30px;
+		margin-top: 0px;
+	}
+
+	.slider-arows {
+		width: 100px;
+		height: 40px;
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	.bor-txt {
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+
+	.proba h2 {
+		text-align: center;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		line-height: 30px;
+		font-style: normal;
+		color: #222222;
+		display: grid;
+		margin-top: 0px;
+	}
+
+	.proba span {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #222222;
+		line-height: 30px;
+		font-style: normal;
+	}
+
+	.proba-line-txt {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 22px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #222222;
+		margin-bottom: 50px;
+	}
 	
 	
 }
@@ -755,6 +949,18 @@ Version: 1.0.0
 
 	.bor-txt {		
 		margin-bottom: 42px;
+	}
+
+	.slider-arows {
+		width: 100px;
+		height: 40px;
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	.bor-txt {
+		padding-top: 0px;
+		padding-left: 0px;
 	}
 
  }

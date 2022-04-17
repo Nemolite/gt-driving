@@ -6,6 +6,15 @@ $(document).ready(function(){
     //autoplaySpeed: 2000,
     prevArrow: $('.slider-arows-left'),
     nextArrow: $('.slider-arows-right'),
+    responsive: [    
+      {
+        breakpoint: 727,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 });
 

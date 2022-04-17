@@ -30,7 +30,7 @@ function gt_driving_program_study(){
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 ">
 				<div class="container">
 					<div class="row">
-					<div class="col-md-4 col-sm-6">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="program_study-vertical_line"></div>
 						<a href="<?php echo get_home_url(); ?>/nachinayushhim-voditelyam/">
 							<div class="program_study-curses">
