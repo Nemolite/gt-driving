@@ -22,7 +22,14 @@
 <body <?php body_class(); ?>>
 <?php bikes2ride_get_page_preloader(); ?>
 <div id="page" class="site">
-	<div class="header">
+	<?php
+		if( is_front_page() ) {
+			$gt_header = "gt_header";
+	   } else {
+		$gt_header = "";
+	   }
+	?>
+	<div class="header <?php echo esc_attr( $gt_header ); ?>">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bikes2ride' ); ?></a>
 		<header id="masthead" <?php gt_bikes2ride_header_class(); ?> role="banner">
 			<?php bikes2ride_ads_header() ?>

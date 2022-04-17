@@ -32,7 +32,9 @@ $contact_block_visibility = get_theme_mod( 'header_contact_block_visibility', bi
 
 		<?php if ( $contact_block_visibility && ! empty( $message ) ) : ?>
 		<div class="top-panel__bottom">
-			<?php bikes2ride_contact_block( 'header' ); ?>
+			<?php //bikes2ride_contact_block( 'header' ); ?>
+			<?php gt_contact_block( 'header' ); ?>			
+			
 			<?php bikes2ride_header_search( '<div class="header-search"><span class="search-form__toggle"></span>%s<span class="search-form__close"></span></div>' ); ?>
 		</div>
 		<?php endif; ?>

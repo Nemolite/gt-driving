@@ -9,7 +9,7 @@ function gt_driving_program_study(){
 <div class="program_study">
 		<div class="container">
 		<div class="row">
-			<div class="col-md-4 col-sm-6 col-xs-12 program_study-info">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 program_study-info">
 				<h2><span>Программы</span><br/>обучения</h2>
                 <p>Наша школа контраварийного и безопасного 
 					вождения плодотворно работает с 2014 
@@ -27,7 +27,7 @@ function gt_driving_program_study(){
 					так и систематическое изучение современных 
 					техник управления автомобилем.</p>
 			</div>
-			<div class="col-md-8 col-sm-6 col-xs-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 ">
 				<div class="container">
 					<div class="row">
 					<div class="col-md-4 col-sm-6">

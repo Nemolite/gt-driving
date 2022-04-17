@@ -39,7 +39,7 @@ Version: 1.0.0
 	white-space: pre;
 }
 
-.header {
+.gt_header {
 	width: 100%;
 	height: 100vh;
 	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/bl1-scaled.jpg);
@@ -275,7 +275,8 @@ Version: 1.0.0
 
 .sertificat {
 	width: 100%;
-	height: 570px;
+	min-height: 570px;
+	height: auto;
 	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/podar-scaled.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -303,7 +304,8 @@ Version: 1.0.0
 
 .sertificat-inner {
 	width: 70%;
-	height: 300px;
+	min-height: 300px;
+	height: auto;
 	margin: 0 auto;
 	padding-top: 20px;
 }
@@ -349,7 +351,8 @@ Version: 1.0.0
 
 .bor {
 	width: 100%;
-	height: 650px;
+	min-height: 650px;
+	height: auto;
 
 }
 
@@ -626,7 +629,153 @@ Version: 1.0.0
 	margin-bottom: 20px;
 }
 
+.contact-block__text {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000000;
+}
 
+@media (max-width: 320px) { 
+	.program_study-gorizont_line {
+		display: none;
+	}
+	
+	.program_study-vertical_line {
+		display: none;
+	}
 
+	.program_study-info h2 {
+		color: white;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 32px;
+		text-transform: uppercase;
+	}
+	.our_auto h2 {
+		text-align: center;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 300;
+	}
 
+	.our_auto span {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+	}
+
+	.sertificat h2 {
+		text-align: center;
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: white;
+		margin-bottom: 50px;
+	}
+	.sertificat span {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.sertificat-inner-item-toptxt {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: white;
+		line-height: 100%;
+		text-align: center;
+	}
+
+	.sertificat {
+		width: 100%;
+		/* height: 570px; */
+		background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/podar-scaled.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		padding-top: 100px;
+		min-height: 570px;
+	}
+
+	.bor-title {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		color: #222222;
+		width: 80%;
+		line-height: 43px;
+		margin-top: 0px;
+	}
+	
+}
+
+@media (min-width: 321px) { 
+	.program_study-gorizont_line {
+		display: none;
+	}
+	
+	.program_study-vertical_line {
+		display: none;
+	}
+	.bor-txt {		
+		margin-bottom: 20px;
+	}
+
+	.bor-title {
+		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		color: #222222;
+		width: 80%;
+		line-height: 28px;
+		margin-top: 0px;
+	}
+	
+	
+}
+
+@media (min-width: 576px) {
+	.program_study-gorizont_line {
+		display: none;
+	}
+	
+	.program_study-vertical_line {
+		display: none;
+	} 
+
+	.bor-txt {		
+		margin-bottom: 42px;
+	}
+
+ }
+
+// Устройства Medium (планшеты, 768 пикселей и выше)
+@media (min-width: 768px) { 
+
+ }
+	 
+// Устройства Large (настольные компьютеры, 992 пикселей и выше)
+@media (min-width: 992px) {
+
+  }
+	 
+// Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
+@media (min-width: 1200px) { 
+
+ }
+	 
+// Устройства XX-Large (большие настольные компьютеры, 1400 пикселей и выше)
+@media (min-width: 1400px) { 
+
+ }	 
 
