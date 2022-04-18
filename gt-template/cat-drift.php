@@ -10,6 +10,7 @@ Template Name: Дрифт (Drift)
         <div class="title-margin-bottom">   
         </div>		
 </div>
+<?php echo the_field('doptxt');?>
 <?php echo do_shortcode('[products category="drift" columns="3" paginate="true"]'); ?>
 
 <?php echo the_content(); ?>

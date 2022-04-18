@@ -15,7 +15,74 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<style>
+.gt_header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2022/04/bl1-scaled.jpg);	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
 
+.program_study {
+	width: 100%;
+	min-height: 700px;
+	background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2022/04/fonps-scaled.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	padding-top: 100px;
+}
+
+.sertificat {
+	width: 100%;
+	min-height: 570px;
+	height: auto;
+	background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2022/04/podar-scaled.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	padding-top: 100px;
+}
+
+.otziv {
+	width: 100%;
+	min-height: 570px;	
+	height: auto;
+	background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2022/04/otziv-scaled.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	padding-top: 130px;	
+}
+@media (max-width: 320px) { 
+	.sertificat {
+		width: 100%;
+		/* height: 570px; */
+		background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2022/04/podar-scaled.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		padding-top: 100px;
+		min-height: 570px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 575px) { 
+	.sertificat {
+		width: 100%;
+		/* height: 570px; */
+		background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2022/04/podar-scaled.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		padding-top: 100px;
+		min-height: 570px;
+	}
+}
+
+</style>
 <?php wp_head(); ?>
 </head>
 

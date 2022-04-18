@@ -10,6 +10,7 @@ Template Name: Индивидуальная подготовка
         <div class="title-margin-bottom">   
         </div>		
 </div>
+<?php echo the_field('doptxt');?>
 <?php echo do_shortcode('[products category="ind" columns="3" paginate="true"]'); ?>
 
 <?php echo the_content(); ?>

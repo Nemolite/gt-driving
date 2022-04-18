@@ -10,6 +10,7 @@ Template Name: Контраварийное вождение
         <div class="title-margin-bottom">   
         </div>		
 </div>
+<?php echo the_field('doptxt');?>
 <?php echo do_shortcode('[products category="contr" columns="3" paginate="true"]'); ?>
 
 <?php echo the_content(); ?>

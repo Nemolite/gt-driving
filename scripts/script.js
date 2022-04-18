@@ -18,3 +18,21 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('.our_auto-inner-basa').each(function (index, value) { 
+    console.log(index + ':' + value); 
+    $(this).hover(
+      function () {          
+          $(this).children('.our_auto-img').children('.our_auto-inner-title').hide(1000);
+          $(this).children('.our_auto-inner').show(1000);
+      },
+      function () {
+        $(this).children('.our_auto-img').children('.our_auto-inner-title').show(1000);
+          $(this).children('.our_auto-inner').hide(1000);                
+          
+      });
+  });
+});
+
+
+

@@ -39,26 +39,7 @@ Version: 1.0.0
 	white-space: pre;
 }
 
-.gt_header {
-	width: 100%;
-	height: 100vh;
-	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/bl1-scaled.jpg);
-	/* background-position: left top; */
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-}
 
-.program_study {
-	width: 100%;
-	min-height: 700px;
-	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/fonps-scaled.jpg);
-	/* background-position: left top; */
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	padding-top: 100px;
-}
 
 .program_study-info h2 {
 	color: white;
@@ -150,7 +131,7 @@ Version: 1.0.0
     width: 800px;
     height: 565px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     margin-bottom: 30px;
 }
 
@@ -158,8 +139,9 @@ Version: 1.0.0
 	width: 800px;
     height: 565px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     margin-bottom: 30px;
+	display: none;
 	
 }
 
@@ -273,16 +255,6 @@ Version: 1.0.0
 	margin-bottom: 50px;
 }
 
-.sertificat {
-	width: 100%;
-	min-height: 570px;
-	height: auto;
-	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/podar-scaled.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	padding-top: 100px;
-}
 
 .sertificat h2 {
 	text-align: center;
@@ -418,18 +390,6 @@ Version: 1.0.0
 	color: #222222;
 	
 }
-
-.otziv {
-	width: 100%;
-	min-height: 570px;	
-	height: auto;
-	background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/otziv-scaled.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	padding-top: 130px;	
-}
-
 .otziv-inner{
 	width: 70%;
 	margin: 0 auto;
@@ -642,6 +602,8 @@ Version: 1.0.0
 	color: #000000;
 }
 
+/*****************Адаптация*********************/
+
 @media (max-width: 320px) { 
 	.program_study-gorizont_line {
 		display: none;
@@ -702,17 +664,7 @@ Version: 1.0.0
 		text-align: center;
 	}
 
-	.sertificat {
-		width: 100%;
-		/* height: 570px; */
-		background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/podar-scaled.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		padding-top: 100px;
-		min-height: 570px;
-	}
-
+	
 	.bor-title {
 		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
 		font-size: 25px;
@@ -771,6 +723,34 @@ Version: 1.0.0
 		margin-bottom: 50px;
 	}
 	
+	.our_auto-img {
+		width: 250px;
+		height: 300px;
+		margin: 0 auto;
+		position: absolute;
+		margin-bottom: 30px;
+		margin-left: -15px;
+	}
+	
+	.our_auto-inner {
+		width: 250px;
+		height: 300px;
+		margin: 0 auto;
+		position: absolute;
+		margin-bottom: 30px;
+		display: none;
+		margin-left: -15px;
+		
+	}
+	
+	.our_auto-inner-basa {
+		width: 250px;
+		height: 300px;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: 30px;
+		margin-left: -15px;	
+	}
 }
 
 @media (min-width: 321px) and (max-width: 575px) { 
@@ -866,17 +846,7 @@ Version: 1.0.0
 		text-align: center;
 	}
 
-	.sertificat {
-		width: 100%;
-		/* height: 570px; */
-		background-image: url(http://gt-ultrasite-03.uxp.ru/wp-content/uploads/2022/04/podar-scaled.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		padding-top: 100px;
-		min-height: 570px;
-	}
-
+	
 	.bor-title {
 		font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
 		font-size: 25px;
@@ -934,6 +904,35 @@ Version: 1.0.0
 		color: #222222;
 		margin-bottom: 50px;
 	}
+
+	.our_auto-img {
+		width: 400px;
+		height: 280px;
+		margin: 0 auto;
+		position: absolute;
+		margin-bottom: 30px;
+		margin-left: -15px;
+	}
+	
+	.our_auto-inner {
+		width: 400px;
+		height: 300px;
+		margin: 0 auto;
+		position: absolute;
+		margin-bottom: 30px;
+		display: none;
+		margin-left: -15px;
+		
+	}
+	
+	.our_auto-inner-basa {
+		width: 400px;
+		height: 300px;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: 30px;
+		margin-left: -15px;	
+	}
 	
 	
 }
@@ -961,6 +960,35 @@ Version: 1.0.0
 	.bor-txt {
 		padding-top: 0px;
 		padding-left: 0px;
+	}
+
+	.our_auto-img {
+		width: 450px;
+		height: 320px;
+		margin: 0 auto;
+		position: absolute;
+		margin-bottom: 30px;
+		margin-left: -15px;
+	}
+	
+	.our_auto-inner {
+		width: 450px;
+		height: 340px;
+		margin: 0 auto;
+		position: absolute;
+		margin-bottom: 30px;
+		display: none;
+		margin-left: -15px;
+		
+	}
+	
+	.our_auto-inner-basa {
+		width: 450px;
+		height: 340px;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: 30px;
+		margin-left: -15px;	
 	}
 
  }
