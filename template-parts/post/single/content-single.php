@@ -13,7 +13,8 @@
 
 	<?php bikes2ride_ads_post_before_content() ?>
 
-	<figure class="post-thumbnail">
+	<?php if( !is_product() ) {?>
+		<figure class="post-thumbnail">
 		<?php $size = bikes2ride_post_thumbnail_size(); ?>
 
 		<?php $utility->media->get_image( array(
@@ -34,6 +35,9 @@
 		'echo'    => true,
 	) );
 	?>
+	
+	<?php }?>
+	
 
 	<header class="entry-header">
 

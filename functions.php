@@ -140,3 +140,8 @@ function gt_blog(){
 require 'option-tree/ot-loader.php';
 require 'gt-inc/option_tree/meta-boxes.php';
 require 'gt-inc/option_tree/theme-options.php';
+
+/**
+ * Удаление значка распродажа в карточке товара
+ */
+remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10, 3 );
