@@ -7,6 +7,7 @@
  * @package bikes2ride
  */
 ?>
+<?php  if ( ! is_product() ) { ?>  
 <div class="post-author-bio">
 	<div class="post-author__holder clear">
 		<div class="post-author__avatar"><?php
@@ -20,3 +21,4 @@
 		?></div>
 	</div>
 </div>
+<?php } ?>

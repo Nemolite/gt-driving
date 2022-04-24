@@ -145,3 +145,52 @@ require 'gt-inc/option_tree/theme-options.php';
  * Удаление значка распродажа в карточке товара
  */
 remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10, 3 );
+
+/**
+ * Helper
+ */
+function show($d){
+	echo "<pre>";
+	print_r($d);
+	echo "</pre>";
+}
+
+/**
+ * Добработка , добавление полного описания товара в табы
+ */
+add_filter( 'woocommerce_product_tabs', 'gt_remove_product_tabs', 98 );
+function gt_remove_product_tabs( $tabs ) {
+    unset( $tabs['additional_information'] );   
+    return $tabs;
+}
+ 
+add_filter( 'woocommerce_product_tabs', 'gt_custom_description_tab', 98 );
+function gt_custom_description_tab( $tabs ) {
+    $tabs['description']['callback'] = 'gt_custom_description_tab_content';    
+    return $tabs;
+}
+ 
+function gt_custom_description_tab_content() {
+    global $product; 
+    echo '<div class="description">';
+    the_content();
+    echo '</div>';
+ 
+   
+}
+
+/**
+ * Скрываем артикул товара в карточке
+ */
+
+function gt_remove_product_page_skus( $enabled ) {
+    if ( ! is_admin() && is_product() ) {
+        return false;
+    }
+ 
+    return $enabled;
+}
+add_filter( 'wc_product_sku_enabled', 'gt_remove_product_page_skus' );
+
+
+

@@ -7,6 +7,7 @@
  * @package bikes2ride
  */
 ?>
+
 <div class="comment-author vcard">
 	<?php echo bikes2ride_comment_author_avatar(); ?>
 </div>

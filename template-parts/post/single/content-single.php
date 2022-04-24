@@ -62,10 +62,11 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
+<?php  if ( ! is_product() ) { ?>        
+	
 	<footer class="entry-footer">
 		<?php get_template_part( 'template-parts/content-entry-meta-single' ); ?>
 		<?php bikes2ride_share_buttons( 'single' ); ?>
 	</footer><!-- .entry-footer -->
-
+<?php } ?>
 </article><!-- #post-## -->
