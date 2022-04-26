@@ -192,5 +192,36 @@ function gt_remove_product_page_skus( $enabled ) {
 }
 add_filter( 'wc_product_sku_enabled', 'gt_remove_product_page_skus' );
 
+/**
+ * Отзывы
+ */
+add_action('init', 'gt_otziv_admin');
+function gt_otziv_admin(){
+	$labels = array(
+		'name'               => 'Отзывы', 
+		'singular_name'      => 'Зпись в отзыв', 
+		'add_new'            => 'Добавить отзыв',
+		'add_new_item'       => 'Добавить запись в отзыв (в заголовок вписать ФИО)',
+		'edit_item'          => 'Редактировать запись в отзыве',
+		'new_item'           => 'Новая запись в отзыв',
+		'view_item'          => 'Посмотреть запись отзыва',
+		'search_items'       => 'Найти запись отзыва',
+		'not_found'          => 'Записи отзыва не найдено',
+		'not_found_in_trash' => 'В корзине записи отзыва не найдено',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Отзывы'
+	  );
+	 
+	  $args = array(
+		'labels' => $labels,
+		'public' => true, // 
+		'show_ui' => true, 
+		'has_archive' => true, 
+		'menu_icon' => 'dashicons-media-text', 
+		'menu_position' => 8, 
+		'supports' => array( 'title', 'editor')
+	);	
+	register_post_type('gt_otziv', $args  );
+}
 
 

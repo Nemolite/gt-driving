@@ -29,30 +29,26 @@ function gt_otziv(){
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
                     <div class="otziv-slider">
                         <div class="otziv-slider-class">
-                            <div> 
-                                <div class="otziv-slider-class-item">
-                                    <p class="otziv-slider-class-item-person-text">« С благодарностью и восхищением мастерством, терпеньем, профессионализмом и доброжелательностью Павла Анисимова - удивительного инструктора и человека, научившего тому, чего сама я не познала бы никогда! ... »</p>
-                                    <p class="otziv-slider-class-item-person">   
-                                    Галимская Татьяна
-                                    </p>    
+                            <?php 
+                             $args_otziv = array(                
+                                'posts_per_page' => -1, 
+                                'post_type' => 'gt_otziv',     
+                            );
+                            $otz = new WP_Query( $args_otziv );
+                            while ( $otz->have_posts() ) : $otz->the_post();
+                            ?>
+                                <div> 
+                                    <div class="otziv-slider-class-item">
+                                        <p class="otziv-slider-class-item-person-text">
+                                        <?php echo get_the_content();?>
+                                        </p>
+                                        <p class="otziv-slider-class-item-person">   
+                                        <?php the_title();?>
+                                        </p>    
+                                    </div>
                                 </div>
-                            </div>
-                            <div> 
-                                <div class="otziv-slider-class-item">
-                                    <p class="otziv-slider-class-item-person-text">« С благодарностью и восхищением мастерством, терпеньем, профессионализмом и доброжелательностью Павла Анисимова - удивительного инструктора и человека, научившего тому, чего сама я не познала бы никогда! ... »</p>
-                                    <p class="otziv-slider-class-item-person">       
-                                    Нигматулин Артём
-                                    </p>    
-                                </div>
-                            </div>
-                            <div> 
-                                <div class="otziv-slider-class-item">
-                                    <p class="otziv-slider-class-item-person-text">« С благодарностью и восхищением мастерством, терпеньем, профессионализмом и доброжелательностью Павла Анисимова - удивительного инструктора и человека, научившего тому, чего сама я не познала бы никогда! ... »</p>
-                                    <p class="otziv-slider-class-item-person"> 
-                                    Галимская Татьяна
-                                    </p>    
-                                </div>
-                            </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_query(); ?>                            
                         </div>
                     </div><!-- class="otziv-slider" -->
                     <div class="slider-arows">
