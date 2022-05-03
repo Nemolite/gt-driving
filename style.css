@@ -608,6 +608,49 @@ Version: 1.0.0
 	margin-bottom: 10px;
 }
 
+mark {
+	display: none;
+}
+
+.term-description p {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.618em 1em;
+    font-weight: 700; 
+	border-radius: 0px;   
+    left: auto;
+    color: white;;
+    background-color: #C53537;
+    border: 0;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+    background-color: #C53537;
+    text-decoration: none;
+    background-image: none;
+    color: #222222;
+}
+
+#gt_single_add_to_cart {
+	color: white;;
+    background-color: #C53537;
+}
+
 /*****************Адаптация*********************/
 
 @media (max-width: 320px) { 

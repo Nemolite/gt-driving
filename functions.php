@@ -224,4 +224,56 @@ function gt_otziv_admin(){
 	register_post_type('gt_otziv', $args  );
 }
 
+/**
+ * Правка меню
+ */
 
+function gt_main_menu() {
+
+	wp_nav_menu( array(
+		'menu'              => '', // ID, имя или ярлык меню
+		'menu_class'        => 'menu', // класс элемента <ul>
+		'menu_id'           => '', // id элемента <ul>
+		'container'         => 'nav', // тег контейнера или false, если контейнер не нужен
+		'container_class'   => 'main-navigation', // класс контейнера
+		'container_id'      => 'site-navigation', // id контейнера
+		'fallback_cb'       => 'wp_page_menu', // колбэк функция, если меню не существует
+		'before'            => '', // текст (или HTML) перед <a
+		'after'             => '', // текст после </a>
+		'link_before'       => '', // текст перед текстом ссылки
+		'link_after'        => '', // текст после текста ссылки
+		'echo'              => true, // вывести или вернуть
+		'depth'             => 0, // количество уровней вложенности
+		'walker'            => '', // объект Walker
+		'theme_location'    => '', // область меню
+		'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+		'item_spacing'      => 'preserve',
+	) );
+}
+
+/**
+ * Исправление вывода категории
+ */
+
+function gt_content_wrap_class( $classes = array() ) {
+	$classes[] = 'site-content_wrap';
+	
+	
+	if ( function_exists( 'tm_pb_is_pagebuilder_used' ) ) {
+		if ( ! tm_pb_is_pagebuilder_used( get_the_ID() ) || is_search() ) {
+			$classes[] = 'container';
+		}
+	} else {
+		// ID - номера страниц
+		if (is_page(array(29,26,92,99,95,101,103,97 ))||is_product()) {
+			$classes[] = 'container';
+		} else {
+			$classes[] = '';
+		}
+		
+	}
+
+	$classes = apply_filters( 'bikes2ride_content_wrap_classes', $classes );
+
+	echo 'class="' . join( ' ', $classes ) . '"';
+}
